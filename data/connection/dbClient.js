@@ -9,9 +9,6 @@ var ret = unload.add(function(){
 ret.remove(); // removes the event-handler
 const client = new Client({
 	connectionString: process.env.DATABASE_URL,
-	ssl: {
-		rejectUnauthorized: false
-  },
   query_timeout: 2000, // number of milliseconds before a query call will timeout, default is no timeout
   connectionTimeoutMillis: 1000,
 });
