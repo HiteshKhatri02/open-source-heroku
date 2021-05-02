@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var path = require("path");
-const accQueries = require("./accountQueries");
+const accQueries = require("./data/accountQueries");
 const port = process.env.PORT || 5000;
 var bodyParser = require('body-parser');
 
