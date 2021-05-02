@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "./data")));
-app.get('/getAccounts', db.getAccounts);
+app.get('/api/getAccounts', db.getAccounts);
 
 
 app.get('/', function(req, res) {
