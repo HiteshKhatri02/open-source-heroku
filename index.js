@@ -1,15 +1,13 @@
 var express = require("express");
 var app = express();
 var path = require("path");
-
-app.use(express.static(path.join(__dirname, './data')));
-const accQueries = require(path.join(__dirname, './data/dbClient/accountQueries'));
+const db = require('./queries');
 const port = process.env.PORT || 5000;
 var bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "./data")));
-app.get('/getAccounts', accQueries.getAccounts);
+app.get('/getAccounts', db.getAccounts);
 
 
 app.get('/', function(req, res) {
