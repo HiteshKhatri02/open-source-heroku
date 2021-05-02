@@ -1,7 +1,9 @@
 var express = require("express");
 var app = express();
 var path = require("path");
-const accQueries = require("./data/accountQueries");
+
+app.use(express.static(path.join(__dirname, './data')));
+const accQueries = require(path.join(__dirname, './data/dbClient/accountQueries'));
 const port = process.env.PORT || 5000;
 var bodyParser = require('body-parser');
 
