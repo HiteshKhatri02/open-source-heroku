@@ -1,0 +1,25 @@
+{
+  "name": "salesforce-to-csv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HiteshKhatri02/open-source-heroku.git"
+  },
+  "author": "hiteshkhatri02",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HiteshKhatri02/open-source-heroku/issues"
+  },
+  "homepage": "https://github.com/HiteshKhatri02/open-source-heroku#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "unload": "^2.2.0"
+  }
+}
